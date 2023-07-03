@@ -4,9 +4,11 @@ import Footer from "../../components/footer";
 import { FaWhatsapp } from "react-icons/fa";
 import { BiSolidRightArrow } from "react-icons/bi";
 import Logo from "./gabriele-logo.png";
+import Whatsapp from "./icons8-whatsapp-96.png";
 import { useState } from "react";
 
 import { Great_Vibes } from "next/font/google";
+import Link from "next/link";
 
 const Great = Great_Vibes({ weight: ["400"], subsets: ["latin"] });
 
@@ -37,13 +39,15 @@ export default function Page() {
             velit?
           </p>
 
-          <button
-            id="button"
-            className="bg-pink-500 text-white text-xl transition shadow-md hover:shadow-lg w-full rounded-md py-3 border-white border-[1px] mt-2 flex flex-row items-center justify-center"
-          >
-            <FaWhatsapp className="mr-2" />
-            Fale comigo e marque sua consulta
-          </button>
+          <Link className="w-full" href="https://wa.me/5511986717169">
+            <button
+              id="button"
+              className="bg-pink-500 text-white text-xl transition shadow-md hover:shadow-lg w-full rounded-md py-3 border-white border-[1px] mt-2 flex flex-row items-center justify-center"
+            >
+              <FaWhatsapp className="mr-2" />
+              Fale comigo e marque sua consulta
+            </button>
+          </Link>
         </div>
         <div></div>
       </div>
@@ -52,7 +56,7 @@ export default function Page() {
         <h2 className="text-center text-4xl text-pink-500 font-bold mb-14 mobile:mb-4 mobile:text-start mobile:mx-[5%]">
           Você precisa saber que...
         </h2>
-        <div className="grid grid-cols-3 gap-x-10 max-w-[80%] mx-[10%] mobile:grid-cols-1 mobile:mx-[5%] mobile:max-w-[90%]">
+        <div className="grid grid-cols-3 gap-x-10 max-w-[80%] mx-[10%] mobile:grid-cols-1 mobile:mx-[5%] mobile:max-w-[90%] mobile:gap-y-4">
           <div>
             <h3 className="text-2xl font-bold mb-1 text-pink-500">
               Aqui você será ouvida
@@ -120,12 +124,22 @@ export default function Page() {
             o que você vem sentindo para que juntos, encontremos meios que
             amenizem os sofrimentos e conflitos presentes.
           </p>
+
+          <Link className="w-full" href="https://wa.me/5511986717169">
+            <button
+              id="button"
+              className="bg-pink-500 text-white text-xl transition shadow-md hover:shadow-lg w-full rounded-md py-3 border-white border-[1px] mt-2 flex flex-row items-center justify-center"
+            >
+              <FaWhatsapp className="mr-2" />
+              Marque sua consulta
+            </button>
+          </Link>
         </div>
       </div>
 
       <div className="bg-white flex flex-col items-center justify-center py-20 mobile:py-10">
         <h6 className="text-3xl text-pink-500 pb-10 font-semibold mobile:pb-4">
-          Atendo pessoas que:
+          Atendo principalmente:
         </h6>
 
         <div className="grid grid-cols-3 gap-x-10 mx-[10%] mobile:grid-cols-1 gap-y-4 mobile:mx-[5%]">
@@ -297,15 +311,24 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="text-center bg-white py-10">
+      <div className="text-center bg-white py-10 px-[5%]">
         <p className="mb-4">Atenção:</p>
 
         <p className="mb-4">
           Este site não oferece atendimento imediato a pessoas em crise suicida.
         </p>
 
-        <p>Em caso de crise ligue para o CVV – 188</p>
+        <p>
+          Em caso de crise ligue para o CVV – 188, ou procure um hospital mais
+          próximo.
+        </p>
       </div>
+
+      <Link className="w-full" href="https://wa.me/5511986717169">
+        <div className="fixed bottom-4 right-4">
+          <Image src={Whatsapp} width={60} height={60} alt="whatsapp" />
+        </div>
+      </Link>
     </main>
   );
 }

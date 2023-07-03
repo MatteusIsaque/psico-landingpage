@@ -11,7 +11,7 @@ body{
 }
 
 #button{
-  animation: 3s linear 1s infinite alternate anima;}
+  animation: 2s linear 1s infinite alternate anima;}
 
 @keyframes anima {
   from{
