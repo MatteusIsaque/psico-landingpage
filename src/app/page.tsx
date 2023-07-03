@@ -1,113 +1,311 @@
-import Image from 'next/image'
+"use client";
+import Image from "next/image";
+import Footer from "../../components/footer";
+import { FaWhatsapp } from "react-icons/fa";
+import { BiSolidRightArrow } from "react-icons/bi";
+import Logo from "./gabriele-logo.png";
+import { useState } from "react";
 
-export default function Home() {
+import { Great_Vibes } from "next/font/google";
+
+const Great = Great_Vibes({ weight: ["400"], subsets: ["latin"] });
+
+export default function Page() {
+  const [questionOne, setQuestionOne] = useState(false);
+  const [questionTwo, setQuestionTwo] = useState(false);
+  const [questionThree, setQuestionThree] = useState(false);
+  const [questionFour, setQuestionFour] = useState(false);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main className="">
+      <nav className="w-full flex items-center justify-center bg-white py-4 ">
+        <div>
+          <Image src={Logo} alt="logo" height={40} />
+        </div>
+      </nav>
+
+      <div className="grid grid-cols-2 max-w-[80%] min-h-[75vh] m-auto tablet:max-w-[90%] mobile:grid-cols-1">
+        <div className="h-full flex justify-center flex-col">
+          <h1 className="mb-2 text-4xl font-semibold text-white">
+            Algumas <span className="font-bold">conversas</span> não podem
+            esperar, cuide de quem você mais ama!
+          </h1>
+          <p className="text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quae
+            eaque! Eos similique ea qui dicta, aut, voluptatibus quibusdam
+            corrupti quam amet ipsam illum temporibus in ratione explicabo modi
+            velit?
+          </p>
+
+          <button
+            id="button"
+            className="bg-pink-500 text-white text-xl transition shadow-md hover:shadow-lg w-full rounded-md py-3 border-white border-[1px] mt-2 flex flex-row items-center justify-center"
           >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            <FaWhatsapp className="mr-2" />
+            Fale comigo e marque sua consulta
+          </button>
+        </div>
+        <div></div>
+      </div>
+
+      <div className="bg-white flex justify-center py-20 flex-col mobile:py-10">
+        <h2 className="text-center text-4xl text-pink-500 font-bold mb-14 mobile:mb-4 mobile:text-start mobile:mx-[5%]">
+          Você precisa saber que...
+        </h2>
+        <div className="grid grid-cols-3 gap-x-10 max-w-[80%] mx-[10%] mobile:grid-cols-1 mobile:mx-[5%] mobile:max-w-[90%]">
+          <div>
+            <h3 className="text-2xl font-bold mb-1 text-pink-500">
+              Aqui você será ouvida
+            </h3>
+            <p>
+              Desabafar e compartilhar coisas que causam desconforto pode ser um
+              desafio significativo para algumas pessoas. Obstáculos como
+              timidez, sentimentos de inferioridade e pensamentos negativos
+              podem afastá-las de buscar ajuda. No entanto, ao conversar comigo,
+              você encontrará uma amiga disposta a ouvi-la, compreendê-la e
+              auxiliá-la na cicatrização de suas feridas.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold mb-1 text-pink-500">
+              O seu problema é real
+            </h3>
+            <p>
+              Os sentimentos e feridas que você experimenta são reais e têm
+              causado sofrimento e problemas em sua vida. Ignorar ou adiar essas
+              questões não é a solução adequada. É fundamental enfrentar
+              problemas reais com tratamentos igualmente reais.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="text-2xl font-bold mb-1 text-pink-500">
+              Existem soluções
+            </h3>
+            <p>
+              Às vezes, certos pensamentos e hábitos parecem pertencer apenas a
+              nós, pensamentos que parecem não ter cura e que nos acompanharão
+              indefinidamente. No entanto, é importante entender que esses
+              sentimentos não precisam comprometer nosso bem-estar nem mudar a
+              forma como vivemos. Aqui, você encontrará apoio para lidar com
+              eles.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="grid grid-cols-5 min-h-[500px] items-center px-[10%] tablet:py-10 mobile:px-[5%] mobile:grid-cols-1">
+        <div className="col-span-2 mobile:h-[300px]"></div>
+        <div className="col-span-3">
+          <h4 className="text-white font-semibold text-3xl">Sobre Mim</h4>
+          <h4 className={`${Great.className} text-5xl text-white pt-2`}>
+            Gabriele Chimento Fonseca de Oliveira
+          </h4>
+          <h4 className="text-white pb-4">CRP: 06/180209</h4>
+          <p className="text-white">
+            Olá, meu nome é Gabriele, sou psicóloga e apaixonada pela alma
+            humana. As diferenças que carregamos nos torna únicos, e isso foi
+            fonte de inspiração para que eu escolhesse essa profissão. As
+            sessões possuem cinquenta minutos cada e acontecem de forma online
+            ou presencial dependendo da necessidade do paciente. Trabalho com a
+            abordagem Terapia Cognitivo Comportamental, mais conhecida como TCC,
+            que tem como um de seus objetivos melhorar o humor e ensinar aos
+            pacientes que a forma como interpretamos as situações podem ser
+            modificadas.
+            <br />
+            <br />
+            Meu foco é me aproximar de você com carinho e sempre disposta a
+            ouvir o que tem a dizer sem julgamentos, além de tentar compreender
+            o que você vem sentindo para que juntos, encontremos meios que
+            amenizem os sofrimentos e conflitos presentes.
+          </p>
+        </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+      <div className="bg-white flex flex-col items-center justify-center py-20 mobile:py-10">
+        <h6 className="text-3xl text-pink-500 pb-10 font-semibold mobile:pb-4">
+          Atendo pessoas que:
+        </h6>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        <div className="grid grid-cols-3 gap-x-10 mx-[10%] mobile:grid-cols-1 gap-y-4 mobile:mx-[5%]">
+          <div className="border-pink-500 border-[2px] rounded-md p-4">
+            <h6 className="mb-2 text-2xl text-pink-500 font-semibold">
+              Ansiedade generalizada
+            </h6>
+            <p>
+              sintomas incluem preocupação constante, nervosismo, dificuldade em
+              se concentrar, tensão muscular, cansaço, problemas de sono e
+              desconforto gastrointestinal. É importante procurar ajuda de um
+              profissional para diagnóstico e tratamento adequados.
+            </p>
+          </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+          <div className="border-pink-500 border-[2px] rounded-md p-4">
+            <h6 className="mb-2 text-2xl text-pink-500 font-semibold">
+              Fobias
+            </h6>
+            <p>
+              São medos intensos e irracionais em relação a objetos, situações
+              ou atividades específicas. Os sintomas incluem sentir um medo
+              extremo quando exposto à fobia, ter ansiedade antecipatória antes
+              de enfrentar a situação temida e fazer esforços para evitar a
+              fobia. É importante procurar tratamento para superar as fobias,
+              que pode envolver com terapia.{" "}
+            </p>
+          </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+          <div className="border-pink-500 border-[2px] rounded-md p-4">
+            <h6 className="mb-2 text-2xl text-pink-500 font-semibold">
+              Problemas em relacionamento
+            </h6>
+            <p>
+              Os problemas de relacionamento podem levar a uma variedade de
+              sintomas psicológicos. Alguns sintomas comuns incluem tristeza,
+              ansiedade, baixa autoestima, irritabilidade, sentimentos de
+              solidão, falta de motivação, distúrbios do sono e dificuldades de
+              concentração. É importante buscar apoio e comunicação aberta para
+              resolver esses problemas e promover relacionamentos saudáveis.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="bg-blue-500 px-[10%] py-[50px] mobile:px-[5%]">
+        <h6 className="text-3xl text-white font-bold mb-4 mobile:2">
+          Perguntas frequentes
+        </h6>
+
+        <div className="border-b-[2px] border-white pt-4 mb-4">
+          <h6
+            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${
+              questionOne === true ? "text-slate-200" : "text-white"
+            }`}
+            onClick={() => {
+              setQuestionOne(!questionOne);
+            }}
+          >
+            <BiSolidRightArrow
+              size={18}
+              className={`mr-2 ${
+                questionOne === true ? "rotate-90" : "rotate-0"
+              } `}
+            />{" "}
+            Será que meu problema necessita de uma psicóloga?
+          </h6>
+          <p
+            className={`mb-4 text-white ${
+              questionOne === true ? "block" : "hidden"
+            }`}
+          >
+            Se você tem sentido algum dos sintomas mencionados anteriormente,
+            estou aqui para oferecer apoio e ajudar a compreender e encontrar
+            soluções para o que tem afetado o seu bem-estar. Podemos trabalhar
+            juntos para explorar sua maneira de pensar e enfrentar seus
+            pensamentos e problemas, buscando melhorar sua qualidade de vida e
+            proporcionar mais conforto. Estou disponível para ajudá-la nesse
+            processo de maneira acolhedora e comprometida.
           </p>
-        </a>
+        </div>
+
+        <div className="border-b-[2px] border-white pt-4 mb-4">
+          <h6
+            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${
+              questionTwo === true ? "text-slate-200" : "text-white"
+            }`}
+            onClick={() => {
+              setQuestionTwo(!questionTwo);
+            }}
+          >
+            <BiSolidRightArrow
+              size={18}
+              className={`mr-2 ${
+                questionTwo === true ? "rotate-90" : "rotate-0"
+              } `}
+            />{" "}
+            Como funciona os pagamentos pela terapia?
+          </h6>
+          <p
+            className={`mb-4 text-white ${
+              questionTwo === true ? "block" : "hidden"
+            }`}
+          >
+            Ao entrar em contato comigo, podemos informar sobre os valores, por
+            questão de ética, o CRP não permite que eu faça anuncio de valores
+            diretamente na página, mas podemos por whatsapp planejar pagamentos
+            por atendimento ou planos mensaias.
+          </p>
+        </div>
+
+        <div className="border-b-[2px] border-white pt-4 mb-4">
+          <h6
+            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${
+              questionThree === true ? "text-slate-200" : "text-white"
+            }`}
+            onClick={() => {
+              setQuestionThree(!questionThree);
+            }}
+          >
+            <BiSolidRightArrow
+              size={18}
+              className={`mr-2 ${
+                questionThree === true ? "rotate-90" : "rotate-0"
+              } `}
+            />{" "}
+            Como funciona o atendimento online?
+          </h6>
+          <p
+            className={`mb-4 text-white ${
+              questionThree === true ? "block" : "hidden"
+            }`}
+          >
+            Um dos maiores benefícios do atendimento online, é o fato de maior
+            liberdade com horarios, podemos marcar qualquer horário para
+            atendimento que for melhor para a atendida, contato que a agenda da
+            psicológa esteja livre no momento solicitado, o atendimento será
+            feito por alguma plataforma de chamada de vídeo("google meet, skype,
+            zoom e outros").
+          </p>
+        </div>
+
+        <div className="border-b-[2px] border-white pt-4 mb-4">
+          <h6
+            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${
+              questionFour === true ? "text-slate-200" : "text-white"
+            }`}
+            onClick={() => {
+              setQuestionFour(!questionFour);
+            }}
+          >
+            <BiSolidRightArrow
+              size={18}
+              className={`mr-2 ${
+                questionFour === true ? "rotate-90" : "rotate-0"
+              } `}
+            />{" "}
+            Tenho dificuldade com chamadas ou falta recursos para utilizá-las
+          </h6>
+          <p
+            className={`mb-4 text-white ${
+              questionFour === true ? "block" : "hidden"
+            }`}
+          >
+            Não se preocupe, com calma e cuidado nós vamos te orientar como deve
+            usar exatamente cada uma das plataformas, e assim iremos guiar você
+            até o momento que esteja tudo pronto para fazermos a sessão online
+          </p>
+        </div>
+      </div>
+
+      <div className="text-center bg-white py-10">
+        <p className="mb-4">Atenção:</p>
+
+        <p className="mb-4">
+          Este site não oferece atendimento imediato a pessoas em crise suicida.
+        </p>
+
+        <p>Em caso de crise ligue para o CVV – 188</p>
       </div>
     </main>
-  )
+  );
 }
