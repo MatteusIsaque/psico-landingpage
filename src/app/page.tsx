@@ -17,12 +17,15 @@ export default function Page() {
   const [questionTwo, setQuestionTwo] = useState(false);
   const [questionThree, setQuestionThree] = useState(false);
   const [questionFour, setQuestionFour] = useState(false);
+  const [questionFive, setQuestionFive] = useState(false);
+  const [questionSix, setQuestionSix] = useState(false);
+  const [politics, setPolitics] = useState(false);
 
   return (
     <main className="">
-      <nav className="w-full flex items-center justify-center bg-white py-4 ">
+      <nav className="w-full flex items-center justify-center bg-white py-1">
         <div>
-          <Image src={Logo} alt="logo" height={40} />
+          <Image src={Logo} alt="logo" height={52} />
         </div>
       </nav>
 
@@ -64,9 +67,9 @@ export default function Page() {
             <p>
               Desabafar e compartilhar coisas que causam desconforto pode ser um
               desafio significativo para algumas pessoas. Obstáculos como
-              timidez, sentimentos de inferioridade e pensamentos negativos
-              podem afastá-las de buscar ajuda. No entanto, ao conversar comigo,
-              você encontrará uma amiga disposta a ouvi-la, compreendê-la e
+              timidez, sentimento de inferioridade e pensamentos negativos podem
+              afastá-las de buscar ajuda. No entanto, ao conversar comigo, você
+              encontrará uma profissional disposta a ouvi-la, compreendê-la e
               auxiliá-la na cicatrização de suas feridas.
             </p>
           </div>
@@ -89,17 +92,15 @@ export default function Page() {
             </h3>
             <p>
               Às vezes, certos pensamentos e hábitos parecem pertencer apenas a
-              nós, pensamentos que parecem não ter cura e que nos acompanharão
-              indefinidamente. No entanto, é importante entender que esses
-              sentimentos não precisam comprometer nosso bem-estar nem mudar a
-              forma como vivemos. Aqui, você encontrará apoio para lidar com
-              eles.
+              nós. No entanto, é importante entender que esses sentimentos não
+              precisam comprometer nosso bem-estar nem mudar a forma como
+              vivemos. Aqui, você encontrará apoio para lidar com eles.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="grid grid-cols-5 min-h-[500px] items-center px-[10%] tablet:py-10 mobile:px-[5%] mobile:grid-cols-1">
+      <div className="grid grid-cols-5 min-h-[500px] items-center py-4 px-[10%] tablet:py-10 mobile:px-[5%] mobile:grid-cols-">
         <div className="col-span-2 mobile:h-[300px]"></div>
         <div className="col-span-3">
           <h4 className="text-white font-semibold text-3xl">Sobre Mim</h4>
@@ -160,12 +161,10 @@ export default function Page() {
               Fobias
             </h6>
             <p>
-              São medos intensos e irracionais em relação a objetos, situações
-              ou atividades específicas. Os sintomas incluem sentir um medo
-              extremo quando exposto à fobia, ter ansiedade antecipatória antes
-              de enfrentar a situação temida e fazer esforços para evitar a
-              fobia. É importante procurar tratamento para superar as fobias,
-              que pode envolver com terapia.{" "}
+              Fobias são medos intensos e irracionais em relação a objetos,
+              situações ou atividades específicas. Os sintomas incluem medo
+              extremo, ansiedade antecipatória e evitação. Terapia é essencial
+              para superar as fobias.
             </p>
           </div>
 
@@ -174,12 +173,46 @@ export default function Page() {
               Problemas em relacionamento
             </h6>
             <p>
-              Os problemas de relacionamento podem levar a uma variedade de
-              sintomas psicológicos. Alguns sintomas comuns incluem tristeza,
-              ansiedade, baixa autoestima, irritabilidade, sentimentos de
-              solidão, falta de motivação, distúrbios do sono e dificuldades de
-              concentração. É importante buscar apoio e comunicação aberta para
-              resolver esses problemas e promover relacionamentos saudáveis.
+              Sintomas comuns incluem tristeza, ansiedade, baixa autoestima,
+              irritabilidade, solidão, falta de motivação, distúrbios do sono e
+              dificuldades de concentração.
+            </p>
+          </div>
+
+          <div className="border-pink-500 border-[2px] rounded-md p-4">
+            <h6 className="mb-2 text-2xl text-pink-500 font-semibold">
+              violência doméstica
+            </h6>
+            <p>
+              Sinais de violência doméstica incluem lesões inexplicáveis,
+              mudanças de comportamento, controle excessivo, isolamento social,
+              comportamento dominador/agressivo, medo do parceiro, mudanças no
+              estilo de vida e declínio na saúde.
+            </p>
+          </div>
+
+          <div className="border-pink-500 border-[2px] rounded-md p-4">
+            <h6 className="mb-2 text-2xl text-pink-500 font-semibold">
+              Vícios
+            </h6>
+            <p>
+              Os vícios incluem cravings, perda de controle, alterações de
+              humor, isolamento social, negligência de responsabilidades,
+              preocupação constante, problemas de sono, baixa autoestima,
+              mudanças no apetite e ansiedade/depressão. Buscar ajuda
+              profissional é essencial para receber diagnóstico adequado e
+              suporte na recuperação do vício.
+            </p>
+          </div>
+
+          <div className="border-pink-500 border-[2px] rounded-md p-4">
+            <h6 className="mb-2 text-2xl text-pink-500 font-semibold">
+              Outros
+            </h6>
+            <p>
+              Independente do diagnóstico, o mais importante é que há tratamento
+              e técnicas que podem te ajudar a lidar com as situações que
+              aparentemente parecem sem solução.
             </p>
           </div>
         </div>
@@ -219,6 +252,35 @@ export default function Page() {
             pensamentos e problemas, buscando melhorar sua qualidade de vida e
             proporcionar mais conforto. Estou disponível para ajudá-la nesse
             processo de maneira acolhedora e comprometida.
+          </p>
+        </div>
+
+        <div className="border-b-[2px] border-white pt-4 mb-4">
+          <h6
+            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${
+              questionSix === true ? "text-slate-200" : "text-white"
+            }`}
+            onClick={() => {
+              setQuestionSix(!questionSix);
+            }}
+          >
+            <BiSolidRightArrow
+              size={18}
+              className={`mr-2 ${
+                questionSix === true ? "rotate-90" : "rotate-0"
+              } `}
+            />{" "}
+            Meus horarios são corridos, consigo ter consultas ?
+          </h6>
+          <p
+            className={`mb-4 text-white ${
+              questionSix === true ? "block" : "hidden"
+            }`}
+          >
+            {" "}
+            Claro! Uma das maiores vantagens de ter terapia online é a
+            flexibilidade em marcar horários, entre em contato comigo e iremos
+            ajustar os melhores horários para suas consultas.
           </p>
         </div>
 
@@ -297,16 +359,43 @@ export default function Page() {
                 questionFour === true ? "rotate-90" : "rotate-0"
               } `}
             />{" "}
-            Tenho dificuldade com chamadas ou falta recursos para utilizá-las
+            Tenho dificuldade com aplicativos de chamada
           </h6>
           <p
             className={`mb-4 text-white ${
               questionFour === true ? "block" : "hidden"
             }`}
           >
-            Não se preocupe, com calma e cuidado nós vamos te orientar como deve
-            usar exatamente cada uma das plataformas, e assim iremos guiar você
-            até o momento que esteja tudo pronto para fazermos a sessão online
+            Podemos fornecer a instrução para utilizar o aplicativo escolhido
+            até que esteja apto para realizarmos a terapia.
+          </p>
+        </div>
+
+        <div className="border-b-[2px] border-white pt-4 mb-4">
+          <h6
+            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${
+              questionFive === true ? "text-slate-200" : "text-white"
+            }`}
+            onClick={() => {
+              setQuestionFive(!questionFive);
+            }}
+          >
+            <BiSolidRightArrow
+              size={18}
+              className={`mr-2 ${
+                questionFive === true ? "rotate-90" : "rotate-0"
+              } `}
+            />{" "}
+            O que é necessário para a terapia online?
+          </h6>
+          <p
+            className={`mb-4 text-white ${
+              questionFive === true ? "block" : "hidden"
+            }`}
+          >
+            Será preciso ter um aparelho com conexão a internet, e um local onde
+            possa ter uma conversa sem distrações ou pessoas que consigam ouvir
+            os assuntos conversados.
           </p>
         </div>
       </div>
@@ -329,6 +418,25 @@ export default function Page() {
           <Image src={Whatsapp} width={60} height={60} alt="whatsapp" />
         </div>
       </Link>
+
+      <div
+        className={`fixed bottom-5 w-full max-w-[90%] mx-[5%] bg-white py-4 px-4 flex justify-between rounded ${
+          politics ? "hidden" : "block"
+        }`}
+      >
+        <p>
+          Ao permanecer na página, você estará de acordo com a nossa{" "}
+          <Link href="/politica-de-privacidade">política de privacidade</Link>{" "}
+        </p>
+        <button
+          className="bg-pink-500 text-white px-10 rounded-sm"
+          onClick={() => {
+            setPolitics(true);
+          }}
+        >
+          Aceito
+        </button>
+      </div>
     </main>
   );
 }
