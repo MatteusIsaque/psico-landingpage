@@ -140,7 +140,7 @@ export default function Page() {
 
       <div className="bg-white flex flex-col items-center justify-center py-20 mobile:py-10">
         <h6 className="text-3xl text-pink-500 pb-10 font-semibold mobile:pb-4">
-          Atendo principalmente:
+          Se você sofre com...
         </h6>
 
         <div className="grid grid-cols-3 gap-x-10 mx-[10%] mobile:grid-cols-1 gap-y-4 mobile:mx-[5%]">
