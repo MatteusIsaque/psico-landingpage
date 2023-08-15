@@ -395,8 +395,8 @@ export default function Page() {
             }`}
           >
             Será preciso ter um aparelho com conexão a internet, e um local onde
-            possa ter uma conversa sem distrações ou pessoas que consigam ouvir
-            os assuntos conversados.
+            possa ter uma conversa sem distrações ou pessoas ao redor para
+            preservar o sigilo das informações.
           </p>
         </div>
       </div>
