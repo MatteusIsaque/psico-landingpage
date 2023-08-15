@@ -32,9 +32,9 @@ export default function Page() {
         </div>
       </nav>
 
-      <div className="grid grid-cols-2 max-w-[80%] min-h-[75vh] m-auto tablet:max-w-[90%] mobile:grid-cols-1">
-        <div className="h-full flex justify-center flex-col">
-          <h1 className="mb-2 text-5xl font-semibold text-white">
+      <div className="grid grid-cols-2 max-w-[80%] min-h-[75vh] m-auto tablet:max-w-[90%] mobile:flex mobile:flex-col-reverse mobile:py-10">
+        <div className="h-full flex justify-center flex-col mobile:pt-6">
+          <h1 className="mb-2 text-5xl font-semibold text-white mobile:text-3xl">
             Algumas{" "}
             <span className="font-extrabold underline decoration-2">
               conversas
@@ -45,7 +45,10 @@ export default function Page() {
             </span>
           </h1>
           <p className="text-white">
-          Atendimento online, escolha o melhor horário para você! Fale diretamente comigo do conforto da sua casa. Sua saúde mental deve ser o seu bem mais precioso. Tenha atendimentos regulares e cuide de você ou de quem você ama!
+            Atendimento online, escolha o melhor horário para você! Fale
+            diretamente comigo do conforto da sua casa. Sua saúde mental deve
+            ser o seu bem mais precioso. Tenha atendimentos regulares e cuide de
+            você ou de quem você ama!
           </p>
 
           <Link className="w-full" href="https://wa.me/5511986717169">
@@ -110,7 +113,7 @@ export default function Page() {
       </div>
 
       <div className="grid grid-cols-5 min-h-[500px] items-center py-10 px-[10%] tablet:py-10 mobile:px-[5%] mobile:grid-cols-1">
-        <div className="col-span-2 mobile:h-[300px] mr-10">
+        <div className="col-span-2 mobile:min-h-[300px] mr-10 mobile:mr-0">
           <Image src={QuemSou} alt="gabriele" />
         </div>
         <div className="col-span-3">
@@ -195,12 +198,10 @@ export default function Page() {
               Vícios
             </h6>
             <p>
-              Os vícios incluem cravings, perda de controle, alterações de
-              humor, isolamento social, negligência de responsabilidades,
-              preocupação constante, problemas de sono, baixa autoestima,
-              mudanças no apetite e ansiedade/depressão. Buscar ajuda
-              profissional é essencial para receber diagnóstico adequado e
-              suporte na recuperação do vício.
+              Quando falamos em vício, é importante salientar que há diversos
+              tipos de vícios, se você tem tido dificuldade de controle ao
+              consumir certas substâncias, jogos de azar e/ou vídeogames é
+              importante reconhecer a hora de pedir ajudar.
             </p>
           </div>
 
@@ -306,10 +307,10 @@ export default function Page() {
               questionTwo === true ? "block" : "hidden"
             }`}
           >
-            Ao entrar em contato comigo, podemos informar sobre os valores, por
-            questão de ética, o CRP não permite que eu faça anuncio de valores
-            diretamente na página, mas podemos por whatsapp planejar pagamentos
-            por atendimento ou planos mensaias.
+            Ao entrar em contato comigo, podemos conversar acerca dos valores.
+            Por questão de ética, o CRP não permite que eu faça anúncios de
+            valores diretamente na página, mas podemos por whatsapp planejar
+            pagamentos por atendimento ou planos mensais.
           </p>
         </div>
 
