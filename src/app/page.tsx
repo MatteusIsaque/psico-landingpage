@@ -35,8 +35,14 @@ export default function Page() {
       <div className="grid grid-cols-2 max-w-[80%] min-h-[75vh] m-auto tablet:max-w-[90%] mobile:grid-cols-1">
         <div className="h-full flex justify-center flex-col">
           <h1 className="mb-2 text-5xl font-semibold text-white">
-            Algumas <span className="font-bold">conversas</span> não podem
-            esperar, cuide de quem você mais ama!
+            Algumas{" "}
+            <span className="font-extrabold underline decoration-2">
+              conversas
+            </span>{" "}
+            não podem esperar,{" "}
+            <span className="font-extrabold underline decoration-2">
+              cuide de quem você mais ama!
+            </span>
           </h1>
           <p className="text-white">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quae
@@ -227,7 +233,7 @@ export default function Page() {
       </div>
 
       <div className="bg-blue-500 px-[10%] py-[50px] mobile:px-[5%]">
-        <h6 className="text-3xl text-white font-bold mb-4 mobile:2">
+        <h6 className="text-5xl text-white font-bold mb-4 mobile:2 text-center">
           Perguntas frequentes
         </h6>
 
@@ -253,13 +259,14 @@ export default function Page() {
               questionOne === true ? "block" : "hidden"
             }`}
           >
-            Se você tem sentido algum dos sintomas mencionados anteriormente,
-            estou aqui para oferecer apoio e ajudar a compreender e encontrar
-            soluções para o que tem afetado o seu bem-estar. Podemos trabalhar
-            juntos para explorar sua maneira de pensar e enfrentar seus
-            pensamentos e problemas, buscando melhorar sua qualidade de vida e
-            proporcionar mais conforto. Estou disponível para ajudá-la nesse
-            processo de maneira acolhedora e comprometida.
+            Se você vem apresentando alguns ou até mesmo muitos dos sintomas
+            mencionados anteriormente ou se você deseja se conhecer melhor,
+            estou aqui para oferecer apoio e ajudar no seu processo de
+            compreensão interna. Podemos trabalhar juntas para explorar sua
+            maneira de pensar e enfrentar seus pensamentos e problemas, buscando
+            melhorar sua qualidade de vida e proporcionar mais conforto. Estou
+            disponível para ajudá-la nesse processo de maneira acolhedora e
+            comprometida.
           </p>
         </div>
 
