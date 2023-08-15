@@ -45,10 +45,7 @@ export default function Page() {
             </span>
           </h1>
           <p className="text-white">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quae
-            eaque! Eos similique ea qui dicta, aut, voluptatibus quibusdam
-            corrupti quam amet ipsam illum temporibus in ratione explicabo modi
-            velit?
+          Atendimento online, escolha o melhor horário para você! Fale diretamente comigo do conforto da sua casa. Sua saúde mental deve ser o seu bem mais precioso. Tenha atendimentos regulares e cuide de você ou de quem você ama!
           </p>
 
           <Link className="w-full" href="https://wa.me/5511986717169">
@@ -190,18 +187,6 @@ export default function Page() {
               tristeza e ansiedade, baixa autoestima, irritabilidade, solidão,
               falta de motivação, distúrbios do sono e dificuldades de
               concentração, dentre outros.
-            </p>
-          </div>
-
-          <div className="border-pink-500 border-[2px] rounded-md p-4">
-            <h6 className="mb-2 text-2xl text-pink-500 font-semibold">
-              violência doméstica
-            </h6>
-            <p>
-              Sinais de violência doméstica incluem lesões inexplicáveis,
-              mudanças de comportamento, controle excessivo, isolamento social,
-              comportamento dominador/agressivo, medo do parceiro, mudanças no
-              estilo de vida e declínio na saúde.
             </p>
           </div>
 
