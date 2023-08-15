@@ -7,6 +7,9 @@ import Logo from "./gabriele-logo.png";
 import Whatsapp from "./icons8-whatsapp-96.png";
 import { useState } from "react";
 
+import QuemSou from "./../../img/foto-quem-sou-site.jpg";
+import Topo from "./../../img/foto-site-topo.jpg";
+
 import { Great_Vibes } from "next/font/google";
 import Link from "next/link";
 
@@ -31,7 +34,7 @@ export default function Page() {
 
       <div className="grid grid-cols-2 max-w-[80%] min-h-[75vh] m-auto tablet:max-w-[90%] mobile:grid-cols-1">
         <div className="h-full flex justify-center flex-col">
-          <h1 className="mb-2 text-4xl font-semibold text-white">
+          <h1 className="mb-2 text-5xl font-semibold text-white">
             Algumas <span className="font-bold">conversas</span> não podem
             esperar, cuide de quem você mais ama!
           </h1>
@@ -52,7 +55,9 @@ export default function Page() {
             </button>
           </Link>
         </div>
-        <div></div>
+        <div className="flex justify-center items-center">
+          <Image src={Topo} alt="Topo" />
+        </div>
       </div>
 
       <div className="bg-white flex justify-center py-20 flex-col mobile:py-10">
@@ -67,10 +72,9 @@ export default function Page() {
             <p>
               Desabafar e compartilhar coisas que causam desconforto pode ser um
               desafio significativo para algumas pessoas. Obstáculos como
-              timidez, sentimento de inferioridade e pensamentos negativos podem
-              afastá-las de buscar ajuda. No entanto, ao conversar comigo, você
-              encontrará uma profissional disposta a ouvi-la, compreendê-la e
-              auxiliá-la na cicatrização de suas feridas.
+              timidez, medo de ser julgada e pensamentos negativos podem
+              afastá-las de buscar ajuda. No entanto, eu estaria aqui para
+              ouvi-lo com atenção e sem julgamentos.
             </p>
           </div>
 
@@ -92,16 +96,20 @@ export default function Page() {
             </h3>
             <p>
               Às vezes, certos pensamentos e hábitos parecem pertencer apenas a
-              nós. No entanto, é importante entender que esses sentimentos não
-              precisam comprometer nosso bem-estar nem mudar a forma como
-              vivemos. Aqui, você encontrará apoio para lidar com eles.
+              nós, mas você sabia que podemos lidar com o que pensamos e
+              sentimos de uma maneira diferente e que isso não precisa
+              comprometer nosso bem-estar nem mudar a forma como vivemos ? Há
+              inúmeras técnicas oferecidas pela Terapia Cognitivo comportamental
+              que podem te ajudar.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="grid grid-cols-5 min-h-[500px] items-center py-4 px-[10%] tablet:py-10 mobile:px-[5%] mobile:grid-cols-">
-        <div className="col-span-2 mobile:h-[300px]"></div>
+      <div className="grid grid-cols-5 min-h-[500px] items-center py-10 px-[10%] tablet:py-10 mobile:px-[5%] mobile:grid-cols-1">
+        <div className="col-span-2 mobile:h-[300px] mr-10">
+          <Image src={QuemSou} alt="gabriele" />
+        </div>
         <div className="col-span-3">
           <h4 className="text-white font-semibold text-3xl">Sobre Mim</h4>
           <h4 className={`${Great.className} text-5xl text-white pt-2`}>
@@ -149,10 +157,10 @@ export default function Page() {
               Ansiedade generalizada
             </h6>
             <p>
-              sintomas incluem preocupação constante, nervosismo, dificuldade em
-              se concentrar, tensão muscular, cansaço, problemas de sono e
-              desconforto gastrointestinal. É importante procurar ajuda de um
-              profissional para diagnóstico e tratamento adequados.
+              Alguns sintomas incluem preocupação constante, nervosismo,
+              dificuldade em se concentrar, tensão muscular, cansaço, problemas
+              de sono e desconforto gastrointestinal. É importante procurar
+              ajuda de um profissional para diagnóstico e tratamento adequados.
             </p>
           </div>
 
@@ -161,21 +169,21 @@ export default function Page() {
               Fobias
             </h6>
             <p>
-              Fobias são medos intensos e irracionais em relação a objetos,
-              situações ou atividades específicas. Os sintomas incluem medo
-              extremo, ansiedade antecipatória e evitação. Terapia é essencial
-              para superar as fobias.
+              Medo ou ansiedade acentuado em relação a algum objeto ou situação.
+              Os sintomas incluem medo extremo, ansiedade antecipatória e
+              evitação. Terapia é essencial para superar as fobias.
             </p>
           </div>
 
           <div className="border-pink-500 border-[2px] rounded-md p-4">
             <h6 className="mb-2 text-2xl text-pink-500 font-semibold">
-              Problemas em relacionamento
+              Problemas em se relacionar
             </h6>
             <p>
-              Sintomas comuns incluem tristeza, ansiedade, baixa autoestima,
-              irritabilidade, solidão, falta de motivação, distúrbios do sono e
-              dificuldades de concentração.
+              Dificuldade com a comunicação, o que pode levar a sentimentos de
+              tristeza e ansiedade, baixa autoestima, irritabilidade, solidão,
+              falta de motivação, distúrbios do sono e dificuldades de
+              concentração, dentre outros.
             </p>
           </div>
 
