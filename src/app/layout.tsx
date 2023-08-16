@@ -20,6 +20,13 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-MKWHWV4M"
+            height="0"
+            width="0"
+          ></iframe>
+        </noscript>
         {children}
         <Footer />
       </body>
