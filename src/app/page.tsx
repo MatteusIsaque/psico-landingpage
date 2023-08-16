@@ -140,7 +140,7 @@ export default function Page() {
             amenizem os sofrimentos e conflitos presentes.
           </p>
 
-          <Link className="w-full" href="https://wa.me/5511986717169">
+          <Link id="button" className="w-full" href="https://wa.me/5511986717169">
             <button
               id="button"
               className="bg-pink-500 text-white text-xl transition shadow-md hover:shadow-lg w-full rounded-md py-3 border-white border-[1px] mt-2 flex flex-row items-center justify-center"
@@ -414,9 +414,9 @@ export default function Page() {
         </p>
       </div>
 
-      <Link className="w-full" href="https://wa.me/5511986717169">
-        <div className="fixed bottom-4 right-4">
-          <Image src={Whatsapp} width={60} height={60} alt="whatsapp" />
+      <Link id="zap-flutuante" className="w-full" href="https://wa.me/5511986717169">
+        <div id="zap-flutuante" className="fixed bottom-4 right-4">
+          <Image id="zap-flutuante" src={Whatsapp} width={60} height={60} alt="whatsapp" />
         </div>
       </Link>
 
