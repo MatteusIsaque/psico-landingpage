@@ -32,9 +32,9 @@ export default function Page() {
         </div>
       </nav>
 
-      <div className="grid grid-cols-2 max-w-[80%] min-h-[75vh] m-auto tablet:max-w-[90%] mobile:flex mobile:flex-col-reverse mobile:py-10">
-        <div className="h-full flex justify-center flex-col mobile:pt-6">
-          <h1 className="mb-2 text-5xl font-semibold text-white mobile:text-3xl">
+      <div className="grid grid-cols-2 max-w-[80%] min-h-[75vh] m-auto tablet:max-w-[90%] mobile:flex mobile:flex-col mobile:py-8">
+        <div className="h-full flex justify-center flex-col mobile:pb-6">
+          <h1 className="mb-2 text-5xl font-semibold text-white uppercase mobile:text-[2.10rem]">
             Algumas{" "}
             <span className="font-extrabold underline decoration-2">
               conversas
@@ -54,7 +54,7 @@ export default function Page() {
           <Link className="w-full" href="https://wa.me/5511986717169">
             <button
               id="button"
-              className="bg-pink-500 text-white text-xl transition shadow-md hover:shadow-lg w-full rounded-md py-3 border-white border-[1px] mt-2 flex flex-row items-center justify-center"
+              className="bg-pink-500 text-white text-xl transition shadow-md hover:shadow-lg w-full rounded-md py-3 border-white border-[1px] mt-2 flex flex-row items-center justify-center mobile:text-lg min-mobile:text-base"
             >
               <FaWhatsapp className="mr-2" />
               Fale comigo e marque sua consulta
@@ -62,7 +62,7 @@ export default function Page() {
           </Link>
         </div>
         <div className="flex justify-center items-center">
-          <Image src={Topo} alt="Topo" />
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Ob4LvFqq5b8" title="YouTube video player" allowFullScreen/>
         </div>
       </div>
 
@@ -114,7 +114,7 @@ export default function Page() {
 
       <div className="grid grid-cols-5 min-h-[500px] items-center py-10 px-[10%] tablet:py-10 mobile:px-[5%] mobile:grid-cols-1">
         <div className="col-span-2 mobile:min-h-[300px] mr-10 mobile:mr-0">
-          <Image src={QuemSou} alt="gabriele" />
+          <Image src={Topo} alt="Topo" />
         </div>
         <div className="col-span-3">
           <h4 className="text-white font-semibold text-3xl">Sobre Mim</h4>
@@ -140,7 +140,7 @@ export default function Page() {
             amenizem os sofrimentos e conflitos presentes.
           </p>
 
-          <Link id="button" className="w-full" href="https://wa.me/5511986717169">
+          <Link className="w-full" href="https://wa.me/5511986717169">
             <button
               id="button"
               className="bg-pink-500 text-white text-xl transition shadow-md hover:shadow-lg w-full rounded-md py-3 border-white border-[1px] mt-2 flex flex-row items-center justify-center"
@@ -225,25 +225,22 @@ export default function Page() {
 
         <div className="border-b-[2px] border-white pt-4 mb-4">
           <h6
-            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${
-              questionOne === true ? "text-slate-200" : "text-white"
-            }`}
+            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${questionOne === true ? "text-slate-200" : "text-white"
+              }`}
             onClick={() => {
               setQuestionOne(!questionOne);
             }}
           >
             <BiSolidRightArrow
               size={18}
-              className={`mr-2 ${
-                questionOne === true ? "rotate-90" : "rotate-0"
-              } `}
+              className={`mr-2 ${questionOne === true ? "rotate-90" : "rotate-0"
+                } `}
             />{" "}
             Será que meu problema necessita de uma psicóloga?
           </h6>
           <p
-            className={`mb-4 text-white ${
-              questionOne === true ? "block" : "hidden"
-            }`}
+            className={`mb-4 text-white ${questionOne === true ? "block" : "hidden"
+              }`}
           >
             Se você vem apresentando alguns ou até mesmo muitos dos sintomas
             mencionados anteriormente ou se você deseja se conhecer melhor,
@@ -258,25 +255,22 @@ export default function Page() {
 
         <div className="border-b-[2px] border-white pt-4 mb-4">
           <h6
-            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${
-              questionSix === true ? "text-slate-200" : "text-white"
-            }`}
+            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${questionSix === true ? "text-slate-200" : "text-white"
+              }`}
             onClick={() => {
               setQuestionSix(!questionSix);
             }}
           >
             <BiSolidRightArrow
               size={18}
-              className={`mr-2 ${
-                questionSix === true ? "rotate-90" : "rotate-0"
-              } `}
+              className={`mr-2 ${questionSix === true ? "rotate-90" : "rotate-0"
+                } `}
             />{" "}
             Meus horarios são corridos, consigo ter consultas ?
           </h6>
           <p
-            className={`mb-4 text-white ${
-              questionSix === true ? "block" : "hidden"
-            }`}
+            className={`mb-4 text-white ${questionSix === true ? "block" : "hidden"
+              }`}
           >
             {" "}
             Claro! Uma das maiores vantagens de ter terapia online é a
@@ -287,25 +281,22 @@ export default function Page() {
 
         <div className="border-b-[2px] border-white pt-4 mb-4">
           <h6
-            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${
-              questionTwo === true ? "text-slate-200" : "text-white"
-            }`}
+            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${questionTwo === true ? "text-slate-200" : "text-white"
+              }`}
             onClick={() => {
               setQuestionTwo(!questionTwo);
             }}
           >
             <BiSolidRightArrow
               size={18}
-              className={`mr-2 ${
-                questionTwo === true ? "rotate-90" : "rotate-0"
-              } `}
+              className={`mr-2 ${questionTwo === true ? "rotate-90" : "rotate-0"
+                } `}
             />{" "}
             Como funciona os pagamentos pela terapia?
           </h6>
           <p
-            className={`mb-4 text-white ${
-              questionTwo === true ? "block" : "hidden"
-            }`}
+            className={`mb-4 text-white ${questionTwo === true ? "block" : "hidden"
+              }`}
           >
             Ao entrar em contato comigo, podemos conversar acerca dos valores.
             Por questão de ética, o CRP não permite que eu faça anúncios de
@@ -316,25 +307,22 @@ export default function Page() {
 
         <div className="border-b-[2px] border-white pt-4 mb-4">
           <h6
-            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${
-              questionThree === true ? "text-slate-200" : "text-white"
-            }`}
+            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${questionThree === true ? "text-slate-200" : "text-white"
+              }`}
             onClick={() => {
               setQuestionThree(!questionThree);
             }}
           >
             <BiSolidRightArrow
               size={18}
-              className={`mr-2 ${
-                questionThree === true ? "rotate-90" : "rotate-0"
-              } `}
+              className={`mr-2 ${questionThree === true ? "rotate-90" : "rotate-0"
+                } `}
             />{" "}
             Como funciona o atendimento online?
           </h6>
           <p
-            className={`mb-4 text-white ${
-              questionThree === true ? "block" : "hidden"
-            }`}
+            className={`mb-4 text-white ${questionThree === true ? "block" : "hidden"
+              }`}
           >
             Um dos maiores benefícios do atendimento online, é o fato de maior
             liberdade com horarios, podemos marcar qualquer horário para
@@ -347,25 +335,22 @@ export default function Page() {
 
         <div className="border-b-[2px] border-white pt-4 mb-4">
           <h6
-            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${
-              questionFour === true ? "text-slate-200" : "text-white"
-            }`}
+            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${questionFour === true ? "text-slate-200" : "text-white"
+              }`}
             onClick={() => {
               setQuestionFour(!questionFour);
             }}
           >
             <BiSolidRightArrow
               size={18}
-              className={`mr-2 ${
-                questionFour === true ? "rotate-90" : "rotate-0"
-              } `}
+              className={`mr-2 ${questionFour === true ? "rotate-90" : "rotate-0"
+                } `}
             />{" "}
             Tenho dificuldade com aplicativos de chamada
           </h6>
           <p
-            className={`mb-4 text-white ${
-              questionFour === true ? "block" : "hidden"
-            }`}
+            className={`mb-4 text-white ${questionFour === true ? "block" : "hidden"
+              }`}
           >
             Podemos fornecer a instrução para utilizar o aplicativo escolhido
             até que esteja apto para realizarmos a terapia.
@@ -374,25 +359,22 @@ export default function Page() {
 
         <div className="border-b-[2px] border-white pt-4 mb-4">
           <h6
-            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${
-              questionFive === true ? "text-slate-200" : "text-white"
-            }`}
+            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${questionFive === true ? "text-slate-200" : "text-white"
+              }`}
             onClick={() => {
               setQuestionFive(!questionFive);
             }}
           >
             <BiSolidRightArrow
               size={18}
-              className={`mr-2 ${
-                questionFive === true ? "rotate-90" : "rotate-0"
-              } `}
+              className={`mr-2 ${questionFive === true ? "rotate-90" : "rotate-0"
+                } `}
             />{" "}
             O que é necessário para a terapia online?
           </h6>
           <p
-            className={`mb-4 text-white ${
-              questionFive === true ? "block" : "hidden"
-            }`}
+            className={`mb-4 text-white ${questionFive === true ? "block" : "hidden"
+              }`}
           >
             Será preciso ter um aparelho com conexão a internet, e um local onde
             possa ter uma conversa sem distrações ou pessoas ao redor para
@@ -421,9 +403,8 @@ export default function Page() {
       </Link>
 
       <div
-        className={`fixed bottom-5 w-full max-w-[90%] mx-[5%] bg-white py-4 px-4 flex justify-between rounded ${
-          politics ? "hidden" : "block"
-        }`}
+        className={`fixed bottom-5 w-full max-w-[90%] mx-[5%] bg-white py-4 px-4 flex justify-between rounded ${politics ? "hidden" : "block"
+          }`}
       >
         <p>
           Ao permanecer na página, você estará de acordo com a nossa{" "}
