@@ -61,9 +61,9 @@ export default function Page() {
             </button>
           </Link>
         </div>
-        <div className="flex justify-center items-center">
+        {/* <div className="flex justify-center items-center">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/Ob4LvFqq5b8" title="YouTube video player" allowFullScreen/>
-        </div>
+        </div> */}
       </div>
 
       <div className="bg-white flex justify-center py-20 flex-col mobile:py-10">
