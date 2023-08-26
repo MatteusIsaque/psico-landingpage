@@ -21,6 +21,7 @@ import Ansiedade from './../../img/icons/ansiedade.png'
 
 import { Great_Vibes } from "next/font/google";
 import Link from "next/link";
+import Form from "../../components/form";
 
 const Great = Great_Vibes({ weight: ["400"], subsets: ["latin"] });
 
@@ -35,7 +36,7 @@ export default function Page() {
 
   return (
     <main className="">
-      <nav className="w-full flex items-center justify-between px-[10%] mobile:px-[5%] bg-white py-1">
+      <nav className="w-full flex items-center justify-between px-[10%] mobile:px-[2%] h-[80px] fixed top-0 bg-white py-1">
         <div>
           <Image src={Logo} alt="logo" height={52} />
         </div>
@@ -44,26 +45,27 @@ export default function Page() {
           <Link className="w-full" href="https://wa.me/5511986717169">
             <button
               id="button"
-              className="bg-[#29a71b] px-6 text-white font-medium text-lg transition shadow-md hover:shadow-lg w-full rounded-md py-3 border-white border-[1px] mt-2 flex flex-row items-center justify-center mobile:text-lg min-mobile:text-base"
+              className="bg-[#29a71b] relative px-6 text-white font-medium text-lg transition shadow-md hover:shadow-lg w-full rounded-md py-3 mobile:py-2 border-white border-[1px] mt-2 flex flex-row items-center justify-center mobile:text-lg min-mobile:text-base"
             >
               <FaWhatsapp className="mr-2" />
               Whatsapp
+              {/* <p className="absolute -top-2 -right-2 h-[20px] w-[20px] rounded-full text-sm bg-[#EF5350] z-20">1</p> */}
             </button>
           </Link>
         </div>
       </nav>
 
-      <div className="grid grid-cols-2 max-w-[80%] min-h-[75vh] m-auto tablet:max-w-[90%] mobile:flex mobile:flex-col mobile:py-8">
-        <div className="h-full flex justify-center flex-col mobile:pb-6">
-          <h1 className="mb-2 text-5xl font-bold text-white uppercase mobile:text-[2.10rem]">
+      <div className="grid grid-cols-2 mt-[80px] max-w-[80%] min-h-[65vh] m-auto tablet:max-w-[90%] mobile:flex mobile:flex-col mobile:py-8 mobile:max-w-[96%]">
+        <div className="h-full flex justify-center flex-col mobile:pb-0">
+          <h1 className="mb-2 text-5xl font-bold text-white uppercase mobile:text-[34px]">
             <span className="underline decoration-2">Psicóloga online</span> para <span className="underline decoration-2">terapia virtual!</span>
           </h1>
           <p className="text-white">
             Entre em contato comigo sem nenhum compromisso. Você pode fazer uma ligação ou uma chamada de vídeo, caso prefira, para esclarecer todas as suas dúvidas.
-            Compreenda o funcionamento dos atendimentos e descubra se você precisa de um profissional para auxiliá-lo, tudo isso sem nenhum custo.
+            Compreenda o funcionamento dos atendimentos, tudo isso sem nenhum custo.
           </p>
 
-          <h2 className="text-center mt-4 text-white text-2xl">Tem alguma dúvida? Tire todas dúvidas sem compromisso!</h2>
+          <h2 className="text-center mt-4 text-white text-2xl mobile:text-base">Tem alguma dúvida? Tire todas dúvidas sem compromisso!</h2>
 
           <Link className="w-full" href="https://wa.me/5511986717169">
             <button
@@ -80,10 +82,10 @@ export default function Page() {
         </div> */}
       </div>
 
-      <div className="bg-white px-[10%] py-14">
-        <h2 className="text-5xl text-brow-500 font-semibold mb-4 text-center">Eu preciso de atendimento psicológico ?</h2>
+      <div className="bg-white px-[10%] py-14 mobile:px-[2%]">
+        <h2 className="text-5xl text-brow-500 font-semibold mb-4 text-center mobile:text-2xl">Eu preciso de atendimento psicológico ?</h2>
         <p className="mb-1">
-          É importante destacar que o Atendimento Psicológico não é diretamente voltado para tratar casos de depressão profunda, transtornos graves ou dores intensas.
+          É importante destacar que o Atendimento Psicológico não é somente para tratar casos de depressão profunda, transtornos graves ou dores intensas.
         </p>
 
         <p className="mb-2">
@@ -97,15 +99,15 @@ export default function Page() {
 
 
       <div className=" flex flex-col items-center justify-center py-20 mobile:py-10">
-        <h6 className="text-5xl text-white pb-10 font-semibold mobile:pb-4">
+        <h6 className="text-5xl text-white pb-10 font-semibold mobile:pb-4 mobile:text-2xl max-w-[96%] text-center">
           Você sofre com algum desses problemas ?
         </h6>
 
         <div className="grid grid-cols-3 gap-x-10 mx-[10%] mobile:grid-cols-1 gap-y-4 mobile:mx-[5%]">
           <div className="border-white border-[2px] rounded-md p-4 flex items-center justify-center flex-col text-center">
-            <Image src={Ansiedade} alt="Problema em se relacionar" height={100} width={100} />
+            <Image src={Ansiedade} alt="Problema em se relacionar" height={80} width={80} />
 
-            <h6 className="mb-2 text-4xl text-white font-semibold">
+            <h6 className="mb-1 underline decoration-2 text-2xl mt-2 text-white font-semibold">
               Ansiedade
             </h6>
             <p className="text-white">
@@ -116,9 +118,9 @@ export default function Page() {
           </div>
 
           <div className="border-white border-[2px] rounded-md p-4 flex items-center justify-center flex-col text-center">
-            <Image src={Medo} alt="Problema em se relacionar" height={100} width={100} />
+            <Image src={Medo} alt="Problema em se relacionar" height={80} width={80} />
 
-            <h6 className="mb-2 text-4xl text-white font-semibold">
+            <h6 className="mb-1 underline decoration-2 text-2xl mt-2 text-white font-semibold">
               Fobias
             </h6>
             <p className="text-white">
@@ -129,8 +131,8 @@ export default function Page() {
           </div>
 
           <div className="border-white border-[2px] rounded-md p-4 flex items-center justify-center flex-col text-center">
-            <Image src={Conversa} alt="Problema em se relacionar" height={100} width={100} />
-            <h6 className="mb-2 text-4xl text-white font-semibold">
+            <Image src={Conversa} alt="Problema em se relacionar" height={80} width={80} />
+            <h6 className="mb-1 underline decoration-2 text-2xl mt-2 text-white font-semibold">
               Problemas em relacionar-se
             </h6>
             <p className="text-white">
@@ -141,8 +143,8 @@ export default function Page() {
           </div>
 
           <div className="border-white border-[2px] rounded-md p-4 flex items-center justify-center flex-col text-center">
-            <Image src={Vicio} alt="Vício" height={100} width={100} />
-            <h6 className="mb-2 text-white font-semibold text-4xl">
+            <Image src={Vicio} alt="Vício" height={80} width={80} />
+            <h6 className="mb-2 text-white font-semibol1 underline decoration-2 font-semibold text-2xl mt-2">
               Vícios
             </h6>
             <p className="text-white">
@@ -152,8 +154,8 @@ export default function Page() {
           </div>
 
           <div className="border-white border-[2px] rounded-md p-4 flex items-center justify-center flex-col text-center">
-            <Image src={Mente} alt="mente" height={100} width={100} />
-            <h6 className="mb-2 text-4xl text-white font-semibold">
+            <Image src={Mente} alt="mente" height={80} width={80} />
+            <h6 className="mb-1 underline decoration-2 text-2xl mt-2 text-white font-semibold">
               Outros
             </h6>
             <p className="text-white flex items-center justify-center"> <TbPointFilled size={20} className="text-white" />Depressão</p>
@@ -171,7 +173,6 @@ export default function Page() {
           <Image src={Topo} alt="Topo" />
         </div>
         <div className="col-span-3">
-          <h4 className="text-brow-500 font-semibold text-3xl">Sua psicóloga</h4>
           <h4 className={` text-3xl text-brow-500 py-1`}>
             Gabriele Chimento Fonseca de Oliveira
           </h4>
@@ -206,45 +207,19 @@ export default function Page() {
         </div>
       </div>
 
+      <div>
+        <Form />
+      </div>
+
 
       <div className="bg-blue-500 px-[10%] py-[50px] mobile:px-[5%]">
-        <h6 className="text-5xl text-white font-bold mb-4 mobile:2 text-center">
+        <h6 className="text-5xl text-white font-bold mb-4 mobile:2 text-center mobile:text-2xl">
           Perguntas frequentes
-        </h6>
+        </h6> 
 
         <div className="border-b-[2px] border-white pt-4 mb-4">
           <h6
-            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${questionOne === true ? "text-slate-200" : "text-white"
-              }`}
-            onClick={() => {
-              setQuestionOne(!questionOne);
-            }}
-          >
-            <BiSolidRightArrow
-              size={18}
-              className={`mr-2 ${questionOne === true ? "rotate-90" : "rotate-0"
-                } `}
-            />{" "}
-            Será que meu problema necessita de uma psicóloga?
-          </h6>
-          <p
-            className={`mb-4 text-white ${questionOne === true ? "block" : "hidden"
-              }`}
-          >
-            Se você vem apresentando alguns ou até mesmo muitos dos sintomas
-            mencionados anteriormente ou se você deseja se conhecer melhor,
-            estou aqui para oferecer apoio e ajudar no seu processo de
-            compreensão interna. Podemos trabalhar juntas para explorar sua
-            maneira de pensar e enfrentar seus pensamentos e problemas, buscando
-            melhorar sua qualidade de vida e proporcionar mais conforto. Estou
-            disponível para ajudá-la nesse processo de maneira acolhedora e
-            comprometida.
-          </p>
-        </div>
-
-        <div className="border-b-[2px] border-white pt-4 mb-4">
-          <h6
-            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${questionSix === true ? "text-slate-200" : "text-white"
+            className={`text-xl font-semibold flex items-center cursor-pointer pb-4 ${questionSix === true ? "text-slate-200" : "text-white"
               }`}
             onClick={() => {
               setQuestionSix(!questionSix);
@@ -270,7 +245,7 @@ export default function Page() {
 
         <div className="border-b-[2px] border-white pt-4 mb-4">
           <h6
-            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${questionTwo === true ? "text-slate-200" : "text-white"
+            className={`text-xl font-semibold flex items-center cursor-pointer pb-4 ${questionTwo === true ? "text-slate-200" : "text-white"
               }`}
             onClick={() => {
               setQuestionTwo(!questionTwo);
@@ -296,7 +271,7 @@ export default function Page() {
 
         <div className="border-b-[2px] border-white pt-4 mb-4">
           <h6
-            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${questionThree === true ? "text-slate-200" : "text-white"
+            className={`text-xl font-semibold flex items-center cursor-pointer pb-4 ${questionThree === true ? "text-slate-200" : "text-white"
               }`}
             onClick={() => {
               setQuestionThree(!questionThree);
@@ -324,7 +299,7 @@ export default function Page() {
 
         <div className="border-b-[2px] border-white pt-4 mb-4">
           <h6
-            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${questionFour === true ? "text-slate-200" : "text-white"
+            className={`text-xl font-semibold flex items-center cursor-pointer pb-4 ${questionFour === true ? "text-slate-200" : "text-white"
               }`}
             onClick={() => {
               setQuestionFour(!questionFour);
@@ -348,7 +323,7 @@ export default function Page() {
 
         <div className="border-b-[2px] border-white pt-4 mb-4">
           <h6
-            className={`text-2xl font-semibold flex items-center cursor-pointer pb-4 ${questionFive === true ? "text-slate-200" : "text-white"
+            className={`text-xl font-semibold flex items-center cursor-pointer pb-4 ${questionFive === true ? "text-slate-200" : "text-white"
               }`}
             onClick={() => {
               setQuestionFive(!questionFive);
@@ -388,6 +363,7 @@ export default function Page() {
       <Link id="zap-flutuante" className="w-full" href="https://wa.me/5511986717169">
         <div id="zap-flutuante" className="fixed bottom-4 right-4">
           <Image id="zap-flutuante" src={Whatsapp} width={60} height={60} alt="whatsapp" />
+          <p className="absolute top-2 right-[1px] h-[20px] w-[20px] rounded-full text-sm bg-[#EF5350] flex items-center justify-center text-white z-20">1</p>
         </div>
       </Link>
 
@@ -432,7 +408,7 @@ export default function Page() {
 
 
 {/* <div className="bg-white flex justify-center py-20 flex-col mobile:py-10">
-<h2 className="text-center text-4xl text-pink-500 font-bold mb-14 mobile:mb-4 mobile:text-start mobile:mx-[5%]">
+<h2 className="text-cente1 underline decoration-2 text-2xl mt-2 text-pink-500 font-bold mb-14 mobile:mb-4 mobile:text-start mobile:mx-[5%]">
   Você precisa saber que...
 </h2>
 <div className="grid grid-cols-3 gap-x-10 max-w-[80%] mx-[10%] mobile:grid-cols-1 mobile:mx-[5%] mobile:max-w-[90%] mobile:gap-y-4">
