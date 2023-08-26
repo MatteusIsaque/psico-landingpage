@@ -17,6 +17,7 @@ import Vicio from './../../img/icons/vicio.png'
 import Conversa from './../../img/icons/conversa.png'
 import Medo from './../../img/icons/medo.png'
 import Ansiedade from './../../img/icons/ansiedade.png'
+import Gabi from './../../img/gabi.jpeg'
 
 
 import { Great_Vibes } from "next/font/google";
@@ -77,9 +78,9 @@ export default function Page() {
             </button>
           </Link>
         </div>
-        {/* <div className="flex justify-center items-center">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Ob4LvFqq5b8" title="YouTube video player" allowFullScreen/>
-        </div> */}
+        <div className="flex justify-center items-center">
+        <Image src={Gabi}  alt="gabriele"/>
+        </div>
       </div>
 
       <div className="bg-white px-[10%] py-14 mobile:px-[2%]">
