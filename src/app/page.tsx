@@ -17,7 +17,7 @@ import Vicio from './../../img/icons/vicio.png'
 import Conversa from './../../img/icons/conversa.png'
 import Medo from './../../img/icons/medo.png'
 import Ansiedade from './../../img/icons/ansiedade.png'
-import Gabi from './../../img/gabi.jpeg'
+import Gabi from './../../img/gabi.jpg'
 
 
 import { Great_Vibes } from "next/font/google";
@@ -78,7 +78,7 @@ export default function Page() {
             </button>
           </Link>
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center my-4">
         <Image src={Gabi}  alt="gabriele"/>
         </div>
       </div>
