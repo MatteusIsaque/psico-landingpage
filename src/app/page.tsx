@@ -59,7 +59,7 @@ export default function Page() {
       <div className="grid grid-cols-2 mt-[80px] max-w-[80%] min-h-[65vh] m-auto tablet:max-w-[90%] mobile:flex mobile:flex-col mobile:py-8 mobile:max-w-[96%]">
         <div className="h-full flex justify-center flex-col mobile:pb-0">
           <h1 className="mb-2 text-5xl font-bold text-white uppercase mobile:text-[34px]">
-            <span className="underline decoration-2">Terapia online</span>
+            <span className="underline decoration-2 text-center">Terapia online</span>
           </h1>
           <p className="text-white text-center">
             Entre em contato comigo sem nenhum compromisso para sanar as suas dúvidas.          </p>
