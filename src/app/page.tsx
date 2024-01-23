@@ -59,10 +59,10 @@ export default function Page() {
       <div className="grid grid-cols-2 mt-[80px] max-w-[80%] min-h-[65vh] m-auto tablet:max-w-[90%] mobile:flex mobile:flex-col mobile:py-8 mobile:max-w-[96%]">
         <div className="h-full flex justify-center flex-col mobile:pb-0">
           <h1 className="mb-2 text-5xl font-bold text-white uppercase mobile:text-[34px]">
-            <span className="underline decoration-2">Psicóloga online</span> para <span className="underline decoration-2">terapia virtual!</span>
+            <span className="underline decoration-2">Terapia online</span>
           </h1>
           <p className="text-white">
-            Entre em contato comigo sem nenhum compromisso. Você pode fazer uma ligação ou uma chamada de vídeo, caso prefira, para esclarecer todas as suas dúvidas.
+            Entre em contato comigo sem nenhum compromisso. para sanar as suas dúvidas.
             Compreenda o funcionamento dos atendimentos, tudo isso sem nenhum custo.
           </p>
 
@@ -79,22 +79,22 @@ export default function Page() {
           </Link>
         </div>
         <div className="flex justify-center items-center my-4">
-        <Image src={Gabi}  alt="gabriele"/>
+          <Image src={Gabi} alt="gabriele" />
         </div>
       </div>
 
       <div className="bg-white px-[10%] py-14 mobile:px-[2%]">
         <h2 className="text-5xl text-brow-500 font-semibold mb-4 text-center mobile:text-2xl">Eu preciso de atendimento psicológico ?</h2>
         <p className="mb-1">
-          É importante destacar que o Atendimento Psicológico não é somente para tratar casos de depressão profunda, transtornos graves ou dores intensas.
+          O atendimento Psicológico não é somente para tratar casos de depressão profunda, transtornos graves ou dores intensas.
         </p>
 
         <p className="mb-2">
-          <span className="underline decoration-1">O recomendado é iniciar o acompanhamento com um psicólogo ao identificar o aumento persistente de sentimentos como</span> medo, tristeza, ansiedade, depressão, raiva, angústia, desânimo e procrastinação. Além disso, caso você esteja enfrentando dificuldades em relação a sua autoestima, realização pessoal ou desempenho nas atividades diárias e profissionais, isso pode ser indicativo de questões psicológicas.
+          <span>O recomendado é iniciar o acompanhamento com um psicólogo ao identificar o aumento persistente de sentimentos como</span> medo, tristeza, ansiedade, depressão, raiva, angústia, desânimo e procrastinação. Além disso, caso você esteja enfrentando dificuldades em relação a sua autoestima, realização pessoal ou desempenho nas atividades diárias e profissionais, isso pode ser indicativo de questões psicológicas.
         </p>
 
         <p>
-          <span className="underline decoration-1">Através do suporte de um profissional da psicologia, é possível alcançar</span> um maior conforto emocional, aumentar a produtividade e promover o bem-estar geral. Portanto, considere a possibilidade de buscar auxílio psicológico para lidar com esses aspectos e melhorar sua qualidade de vida.
+          <span>Através do suporte de um profissional da psicologia, é possível alcançar</span> um maior conforto emocional, aumentar a produtividade e promover o bem-estar geral. Portanto, considere a possibilidade de buscar auxílio psicológico para lidar com esses aspectos e melhorar sua qualidade de vida.
         </p>
       </div>
 
@@ -126,20 +126,18 @@ export default function Page() {
             </h6>
             <p className="text-white">
               Medo ou ansiedade em relação a algum objeto ou situação,
-              sintomas incluem medo extremo, ansiedade antecipatória e
-              evitação. Terapia é essencial para superar as fobias.
+              sintomas incluem medo extremo, ansiedade e
+              evitação. Terapia é essencial para o tratamento de fobias.
             </p>
           </div>
 
           <div className="border-white border-[2px] rounded-md p-4 flex items-center justify-center flex-col text-center">
             <Image src={Conversa} alt="Problema em se relacionar" height={80} width={80} />
             <h6 className="mb-1 underline decoration-2 text-2xl mt-2 text-white font-semibold">
-              Problemas em relacionar-se
+              Problema de relacionamento
             </h6>
             <p className="text-white">
-              Dificuldade com a comunicação, o que pode levar a sentimentos de
-              tristeza e ansiedade, baixa autoestima, irritabilidade, solidão,
-              falta de motivação, dentre outros.
+              Dificuldades em expressar o que pensa ou sente, o que pode levar a conflitos internos e externos.
             </p>
           </div>
 
@@ -160,7 +158,6 @@ export default function Page() {
               Outros
             </h6>
             <p className="text-white flex items-center justify-center"> <TbPointFilled size={20} className="text-white" />Depressão</p>
-            <p className="text-white flex items-center justify-center"> <TbPointFilled size={20} className="text-white" />Transtornos</p>
             <p className="text-white flex items-center justify-center"> <TbPointFilled size={20} className="text-white" />TOC</p>
             <p className="text-white flex items-center justify-center"> <TbPointFilled size={20} className="text-white" />TDA</p>
             <p className="text-white flex items-center justify-center"> <TbPointFilled size={20} className="text-white" />TDAH</p>
@@ -180,10 +177,10 @@ export default function Page() {
           <h4 className="text-brow-500 pb-4">CRP: 06/180209</h4>
           <p className="">
             Olá, meu nome é Gabriele, sou psicóloga e apaixonada pela alma
-            humana. As diferenças que carregamos nos torna únicos, e isso foi
+            humana. As diferenças que carregamos nos tornam únicos, e isso foi
             fonte de inspiração para que eu escolhesse essa profissão. As
             sessões possuem cinquenta minutos cada e acontecem de forma online
-            ou presencial dependendo da necessidade do paciente. Trabalho com a
+            . Trabalho com a
             abordagem Terapia Cognitivo Comportamental, mais conhecida como TCC,
             que tem como um de seus objetivos melhorar o humor e ensinar aos
             pacientes que a forma como interpretamos as situações podem ser
@@ -216,7 +213,7 @@ export default function Page() {
       <div className="bg-blue-500 px-[10%] py-[50px] mobile:px-[5%]">
         <h6 className="text-5xl text-white font-bold mb-4 mobile:2 text-center mobile:text-2xl">
           Perguntas frequentes
-        </h6> 
+        </h6>
 
         <div className="border-b-[2px] border-white pt-4 mb-4">
           <h6
@@ -231,7 +228,7 @@ export default function Page() {
               className={`mr-2 ${questionSix === true ? "rotate-90" : "rotate-0"
                 } `}
             />{" "}
-            Meus horarios são corridos, consigo ter consultas ?
+            Meus horários são corridos, consigo ter consultas ?
           </h6>
           <p
             className={`mb-4 text-white ${questionSix === true ? "block" : "hidden"
@@ -265,12 +262,12 @@ export default function Page() {
           >
             Ao entrar em contato comigo, podemos conversar acerca dos valores.
             Por questão de ética, o CRP não permite que eu faça anúncios de
-            valores diretamente na página, mas podemos por whatsapp planejar
+            valores diretamente na página, mas podemos por whatsapp ou ligação planejar
             pagamentos por atendimento ou planos mensais.
           </p>
         </div>
 
-        <div className="border-b-[2px] border-white pt-4 mb-4">
+        {/* <div className="border-b-[2px] border-white pt-4 mb-4">
           <h6
             className={`text-xl font-semibold flex items-center cursor-pointer pb-4 ${questionThree === true ? "text-slate-200" : "text-white"
               }`}
@@ -296,7 +293,7 @@ export default function Page() {
             feito por alguma plataforma de chamada de vídeo("google meet, skype,
             zoom e outros").
           </p>
-        </div>
+        </div> */}
 
         <div className="border-b-[2px] border-white pt-4 mb-4">
           <h6
