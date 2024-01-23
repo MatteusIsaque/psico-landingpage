@@ -84,7 +84,7 @@ export default function Page() {
       <div className="bg-white px-[10%] py-14 mobile:px-[2%]">
         <h2 className="text-5xl text-brow-500 font-semibold mb-4 text-center mobile:text-2xl">Eu preciso de atendimento psicológico ?</h2>
         <p className="mb-1">
-          O atendimento Psicológico não é somente para tratar casos de depressão profunda, transtornos graves ou dores intensas.
+          O atendimento Psicológico não é somente para tratar casos de depressão profunda, transtornos graves ou dores emocionais.
         </p>
 
         <p className="mb-2">
