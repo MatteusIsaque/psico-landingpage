@@ -17,7 +17,7 @@ import Vicio from './../../img/icons/vicio.png'
 import Conversa from './../../img/icons/conversa.png'
 import Medo from './../../img/icons/medo.png'
 import Ansiedade from './../../img/icons/ansiedade.png'
-import Gabi from './../../img/gabi.jpg'
+import Gabi from './../../img/atendimento.jpg'
 
 
 import { Great_Vibes } from "next/font/google";
@@ -266,7 +266,7 @@ export default function Page() {
             pagamentos por atendimento ou planos mensais.
           </p>
         </div>
-
+              
         {/* <div className="border-b-[2px] border-white pt-4 mb-4">
           <h6
             className={`text-xl font-semibold flex items-center cursor-pointer pb-4 ${questionThree === true ? "text-slate-200" : "text-white"
