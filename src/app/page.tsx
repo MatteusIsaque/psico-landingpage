@@ -61,10 +61,8 @@ export default function Page() {
           <h1 className="mb-2 text-5xl font-bold text-white uppercase mobile:text-[34px]">
             <span className="underline decoration-2">Terapia online</span>
           </h1>
-          <p className="text-white">
-            Entre em contato comigo sem nenhum compromisso. para sanar as suas dúvidas.
-            Compreenda o funcionamento dos atendimentos, tudo isso sem nenhum custo.
-          </p>
+          <p className="text-white text-center">
+            Entre em contato comigo sem nenhum compromisso. para sanar as suas dúvidas.          </p>
 
           <h2 className="text-center mt-4 text-white text-2xl mobile:text-base">Tem alguma dúvida? Tire todas dúvidas sem compromisso!</h2>
 
@@ -266,7 +264,7 @@ export default function Page() {
             pagamentos por atendimento ou planos mensais.
           </p>
         </div>
-              
+
         {/* <div className="border-b-[2px] border-white pt-4 mb-4">
           <h6
             className={`text-xl font-semibold flex items-center cursor-pointer pb-4 ${questionThree === true ? "text-slate-200" : "text-white"
