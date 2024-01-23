@@ -177,8 +177,7 @@ export default function Page() {
             Olá, meu nome é Gabriele, sou psicóloga e apaixonada pela alma
             humana. As diferenças que carregamos nos tornam únicos, e isso foi
             fonte de inspiração para que eu escolhesse essa profissão. As
-            sessões possuem cinquenta minutos cada e acontecem de forma online
-            . Trabalho com a
+            sessões possuem cinquenta minutos cada e acontecem de forma online. Trabalho com a
             abordagem Terapia Cognitivo Comportamental, mais conhecida como TCC,
             que tem como um de seus objetivos melhorar o humor e ensinar aos
             pacientes que a forma como interpretamos as situações podem ser
