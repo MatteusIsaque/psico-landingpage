@@ -111,7 +111,7 @@ export default function Page() {
             </h6>
             <p className="text-white">
               Alguns sintomas incluem preocupação constante, nervosismo,
-              dificuldade em se concentrar, tensão muscular, cansaço, problemas
+              dificuldade de concentração, tensão muscular, cansaço, problemas
               de sono e desconforto gastrointestinal.
             </p>
           </div>
