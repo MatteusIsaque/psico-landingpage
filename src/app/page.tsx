@@ -62,7 +62,7 @@ export default function Page() {
             <span className="underline decoration-2">Terapia online</span>
           </h1>
           <p className="text-white text-center">
-            Entre em contato comigo sem nenhum compromisso. para sanar as suas dúvidas.          </p>
+            Entre em contato comigo sem nenhum compromisso para sanar as suas dúvidas.          </p>
 
           <h2 className="text-center mt-4 text-white text-2xl mobile:text-base">Tem alguma dúvida? Tire todas dúvidas sem compromisso!</h2>
 
