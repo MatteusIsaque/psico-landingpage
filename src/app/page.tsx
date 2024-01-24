@@ -62,7 +62,7 @@ export default function Page() {
             <span className="underline decoration-2 text-center">Terapia online</span>
           </h1>
           <p className="text-white text-center">
-            Entre em contato comigo sem nenhum compromisso para sanar as suas dúvidas.          </p>
+            Entre em contato comigo sem para sanar as suas dúvidas.          </p>
 
           <h2 className="text-center mt-4 text-white text-2xl mobile:text-base">Tem alguma dúvida? Tire todas dúvidas sem compromisso!</h2>
 
@@ -172,7 +172,7 @@ export default function Page() {
           <h4 className={` text-3xl text-brow-500 py-1`}>
             Gabriele Chimento Fonseca de Oliveira
           </h4>
-          <h4 className="text-brow-500 pb-4">CRP: 06/180209</h4>
+          <h4 className="text-brow-500 pb-4">PSICÓLOGA CRP: 06/180209</h4>
           <p className="">
             Olá, meu nome é Gabriele, sou psicóloga e apaixonada pela alma
             humana. As diferenças que carregamos nos tornam únicos, e isso foi
