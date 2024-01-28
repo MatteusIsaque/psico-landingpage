@@ -397,10 +397,6 @@ export default function Page() {
           Entre em contato comigo sem para sanar as suas dúvidas.{" "}
         </p>
 
-        <h2 className="text-center mt-4 text-white text-2xl mobile:text-base">
-          Tem alguma dúvida? Entre com contado comigo
-        </h2>
-
         <Link className="w-full" href="https://wa.me/5511986717169">
           <button
             id="button"
