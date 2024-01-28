@@ -398,7 +398,7 @@ export default function Page() {
         <p className="text-white text-center">
         Tem alguma dúvida? Entre em contato comigo.{" "}
         </p>
-
+{/* 
         <Link className="w-full" href="https://wa.me/5511986717169">
           <button
             id="button"
@@ -407,7 +407,7 @@ export default function Page() {
             <FaWhatsapp className="mr-2" />
             Esclarecer dúvidas pelo whatsapp
           </button>
-        </Link>
+        </Link> */}
       </div>
 
       <div className="text-center bg-white py-10 px-[5%]">
