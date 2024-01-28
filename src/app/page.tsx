@@ -61,7 +61,7 @@ export default function Page() {
           <Image src={Gabi} alt="gabriele" />
         </div>
         <div className="h-full flex justify-center flex-col mobile:pb-0">
-          <h1 className="mb-2 text-5xl font-bold text-white uppercase mobile:text-[34px]">
+          <h1 className="mb-2 text-5xl font-bold text-white uppercase mobile:text-[34px] text-center">
             <span className="underline decoration-2 text-center">Terapia online</span>
           </h1>
           <p className="text-white text-center">
