@@ -25,7 +25,7 @@ export default function Form() {
     }
 
     try {
-      await axios.post(`https://main-form.herokuapp.com/form/simcompany`, data)
+      await axios.post(`https://main-form.herokuapp.com/form/send-form-campanha`, data)
     } catch (error) {
 
     }
