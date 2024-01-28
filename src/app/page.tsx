@@ -396,7 +396,7 @@ export default function Page() {
 
       <div className="h-full flex justify-center flex-col mobile:pb-0">
         <p className="text-white text-center">
-          Entre em contato comigo sem para sanar as suas dúvidas.{" "}
+        Tem alguma dúvida? Entre em contato comigo.{" "}
         </p>
 
         <Link className="w-full" href="https://wa.me/5511986717169">
