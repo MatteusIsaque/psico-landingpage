@@ -57,6 +57,9 @@ export default function Page() {
       </nav>
 
       <div className="grid grid-cols-2 mt-[80px] max-w-[80%] min-h-[65vh] m-auto tablet:max-w-[90%] mobile:flex mobile:flex-col mobile:py-8 mobile:max-w-[96%]">
+        <div className="flex justify-center items-center my-4">
+          <Image src={Gabi} alt="gabriele" />
+        </div>
         <div className="h-full flex justify-center flex-col mobile:pb-0">
           <h1 className="mb-2 text-5xl font-bold text-white uppercase mobile:text-[34px]">
             <span className="underline decoration-2 text-center">Terapia online</span>
@@ -64,7 +67,7 @@ export default function Page() {
           <p className="text-white text-center">
             Entre em contato comigo sem para sanar as suas dúvidas.          </p>
 
-          <h2 className="text-center mt-4 text-white text-2xl mobile:text-base">Tem alguma dúvida? Tire todas dúvidas sem compromisso!</h2>
+          <h2 className="text-center mt-4 text-white text-2xl mobile:text-base">Tem alguma dúvida? Tire todas dúvidas!</h2>
 
           <Link className="w-full" href="https://wa.me/5511986717169">
             <button
@@ -75,9 +78,6 @@ export default function Page() {
               Esclarecer dúvidas pelo whatsapp
             </button>
           </Link>
-        </div>
-        <div className="flex justify-center items-center my-4">
-          <Image src={Gabi} alt="gabriele" />
         </div>
       </div>
 
