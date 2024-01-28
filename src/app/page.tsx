@@ -55,7 +55,14 @@ export default function Page() {
         </div>
       </nav>
 
-      <div className="flex justify-center items-center">
+      <div className="flex justify-end items-center flex-col h-[800px] mobile:h-[800px] min-mobile:h-[700px]">
+        <div>
+          <h1 className="mb-2 text-5xl font-bold text-white uppercase mobile:text-[34px] text-center">
+            <span className="underline decoration-2 text-center">
+              Terapia online
+            </span>
+          </h1>
+        </div>
         <div className="flex justify-center items-center">
           <Image src={Gabi} alt="gabriele" width={500} />
         </div>
@@ -218,10 +225,10 @@ export default function Page() {
             situações podem ser modificadas.
             <br />
             <br />
-            Meu foco é me aproximar de você sempre disposta a
-            ouvir o que tem a dizer sem julgamentos, além de tentar compreender
-            o que você vem sentindo para que juntos, encontremos meios que
-            amenizem os sofrimentos e conflitos presentes.
+            Meu foco é me aproximar de você sempre disposta a ouvir o que tem a
+            dizer sem julgamentos, além de tentar compreender o que você vem
+            sentindo para que juntos, encontremos meios que amenizem os
+            sofrimentos e conflitos presentes.
           </p>
 
           <Link className="w-full" href="https://wa.me/5511986717169">
@@ -388,11 +395,6 @@ export default function Page() {
       </div>
 
       <div className="h-full flex justify-center flex-col mobile:pb-0">
-        <h1 className="mb-2 text-5xl font-bold text-white uppercase mobile:text-[34px] text-center">
-          <span className="underline decoration-2 text-center">
-            Terapia online
-          </span>
-        </h1>
         <p className="text-white text-center">
           Entre em contato comigo sem para sanar as suas dúvidas.{" "}
         </p>
