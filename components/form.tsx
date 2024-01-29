@@ -33,10 +33,10 @@ export default function Form() {
 
   return (
     <form className='pt-4 max-w-[96%] m-auto' onSubmit={handleSubmit}>
-      <h2 className='text-center text-2xl text-white font-semibold pb-4'>Se preferir deixe suas informações</h2>
+      <h2 className='text-center text-2xl text-white font-semibold pb-4'>Se preferir deixe suas informações, que entrarei em contato.</h2>
       <p className='text-white'>Nome:</p>
       <input className='w-full mb-2 rounded-' style={{ paddingTop: "2px", paddingBottom: "2px", paddingLeft: "4px" }} type="text" placeholder='Nome' onChange={(e) => { setName(e.target.value) }} />
-      <p className='text-white'>Numero:</p>
+      <p className='text-white'>Número:</p>
       <input className='w-full mb-2' style={{ paddingTop: "2px", paddingBottom: "2px", paddingLeft: "4px" }} type="text" placeholder='Numero' onChange={(e) => { setNumber(e.target.value) }} />
       <p className='text-white'>Email:</p>
       <input className='w-full mb-2' style={{ paddingTop: "2px", paddingBottom: "2px", paddingLeft: "4px" }} type="email" placeholder='Email' onChange={(e) => { setEmail(e.target.value) }} />

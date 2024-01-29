@@ -70,34 +70,21 @@ export default function Page() {
 
       <div className="bg-white px-[10%] py-14 mobile:px-[2%]">
         <h2 className="text-5xl text-brow-500 font-semibold mb-4 text-start mobile:text-2xl">
-          Eu preciso de atendimento psicológico ?
+          QUANDO DEVO PROCURAR UM PSICÓLOGO ?
         </h2>
         <p className="mb-1">
-          O atendimento Psicológico não é somente para tratar casos de depressão
-          profunda, transtornos graves ou dores emocionais.
-        </p>
-
-        <p className="mb-2">
-          <span>
-            O recomendado é iniciar o acompanhamento com um psicólogo ao
-            identificar o aumento persistente de sentimentos como
-          </span>{" "}
-          medo, tristeza, ansiedade, depressão, raiva, angústia, desânimo e
-          procrastinação. Além disso, caso você esteja enfrentando dificuldades
-          em relação a sua autoestima, realização pessoal ou desempenho nas
+          O atendimento Psicológico não é somente para tratar casos de
+          transtornos mentais, tais como depressão e/ou ansiedade generalizada,
+          e transtornos do desenvolvimento em geral. É indicado procurar um
+          psicólogo ao identificar aumento persistente de medo, tristeza,
+          ansiedade, raiva, desânimo, procrastinação, dentre outros que estejam
+          comprometendo a sua qualidade de vida, e/ou bem estar de quem está a
+          sua volta. Além disso, caso você esteja enfrentando dificuldades em
+          relação a sua autoestima, realização pessoal ou desempenho nas
           atividades diárias e profissionais, isso pode ser indicativo de
-          questões psicológicas.
-        </p>
-
-        <p>
-          <span>
-            Através do suporte de um profissional da psicologia, é possível
-            alcançar
-          </span>{" "}
-          um maior conforto emocional, aumentar a produtividade e promover o
-          bem-estar geral. Portanto, considere a possibilidade de buscar auxílio
-          psicológico para lidar com esses aspectos e melhorar sua qualidade de
-          vida.
+          questões psicológicas. Portanto, considere a possibilidade de buscar
+          auxílio psicológico para lidar com esses aspectos e melhorar sua
+          qualidade de vida.
         </p>
       </div>
 
@@ -151,11 +138,11 @@ export default function Page() {
               width={80}
             />
             <h6 className="mb-1 underline decoration-2 text-2xl mt-2 text-white font-semibold">
-              Problema de relacionamento
+              Problemas de relacionamento
             </h6>
             <p className="text-white">
-              Dificuldades em expressar o que pensa ou sente, o que pode levar a
-              conflitos internos e externos.
+              Incluem dificuldades em expressar o que pensa ou sente, o que pode
+              levar a conflitos internos e externos.
             </p>
           </div>
 
@@ -303,10 +290,10 @@ export default function Page() {
               questionTwo === true ? "block" : "hidden"
             }`}
           >
-            Ao entrar em contato comigo, podemos conversar acerca dos valores.
-            Por questão de ética, o CRP não permite que eu faça anúncios de
-            valores diretamente na página, mas podemos por whatsapp ou ligação
-            planejar pagamentos por atendimento ou planos mensais.
+            Podemos conversar acerca dos valores. Por questão de ética, o CRP
+            não permite que eu faça anúncios de valores diretamente na página,
+            mas podemos por whatsapp ou ligação planejar pagamentos por
+            atendimento ou planos mensais.
           </p>
         </div>
 
@@ -396,9 +383,9 @@ export default function Page() {
 
       <div className="h-full flex justify-center flex-col mobile:pb-0">
         <p className="text-white text-center">
-        Tem alguma dúvida? Entre em contato comigo.{" "}
+          Tem alguma dúvida? Entre em contato comigo.{" "}
         </p>
-{/* 
+        {/* 
         <Link className="w-full" href="https://wa.me/5511986717169">
           <button
             id="button"
