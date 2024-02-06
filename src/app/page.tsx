@@ -290,10 +290,8 @@ export default function Page() {
               questionTwo === true ? "block" : "hidden"
             }`}
           >
-            Podemos conversar acerca dos valores. Por questão de ética, o CRP
-            não permite que eu faça anúncios de valores diretamente na página,
-            mas podemos por whatsapp ou ligação planejar pagamentos por
-            atendimento ou planos mensais.
+            Por questão de ética, o CRP não permite que eu faça anúncios de
+            valores diretamente na página, Mas podemos planejar por WhatsApp ou ligação a melhor forma de pagamento para você.
           </p>
         </div>
 
